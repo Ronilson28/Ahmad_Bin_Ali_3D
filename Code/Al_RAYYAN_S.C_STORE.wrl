@@ -1,0 +1,133 @@
+#VRML V2.0 utf8
+Group {
+    children [
+        Transform {
+            translation 0 -1.5 0
+            children [
+                Shape {
+                    appearance DEF White Appearance {
+                        material Material {
+                            diffuseColor 1 1 1
+                        }
+                    }
+                    geometry Cylinder {
+                        height 3
+                        radius 7
+                        bottom TRUE
+                        top FALSE
+                        side TRUE
+                    }
+                }
+            ]
+        }
+        Transform {
+            translation 0 0.5 0
+            rotation 0 0 0 0
+            children [
+                Shape {
+                    appearance DEF DarkGrey Appearance {
+                        material Material {
+                            diffuseColor 0.662745 0.662745 0.662745
+                        }
+                    }
+                    geometry Cone {
+                        height 1
+                        bottomRadius 7
+                        bottom FALSE
+                    }
+                }
+            ]
+        }
+        Transform {
+            translation 0 -1.99 1.5
+            children [
+                Shape {
+                    appearance DEF Black Appearance {
+                        material Material {
+                            diffuseColor 0 0 0
+                            shininess 0.25
+                        }
+                    }
+                    geometry Cylinder {
+                        height 2
+                        radius 6
+                    }
+                }
+            ]
+        }
+        Transform {
+            translation 0 -0.75 7
+            scale 0.5 0.95 1
+            children [
+                Shape {
+                    appearance USE DarkGrey
+                    geometry Text {
+                        string ["Al"]
+                        fontStyle FontStyle {
+                            family "SERIF"
+                            style "BOLD"
+                            size 0.8
+                        }
+                    }
+                }
+                Transform {
+                    translation 0.8 0 0
+                    rotation 0 1 0 0.0698113
+                    children [
+                        Shape {
+                            appearance USE DarkGrey
+                            geometry Text {
+                                string ["RAYYAN"]
+                                fontStyle FontStyle {
+                                    family "SERIF"
+                                    style "BOLD"
+                                    size 0.8
+                                }
+                            }
+                        }
+                    ]
+                }
+                Transform {
+                    translation 3.6 0 -0.225
+                    rotation 0 1 0 0.139626
+                    children [
+                        Shape {
+                            appearance USE DarkGrey
+                            geometry Text {
+                                string ["S.C"]
+                                fontStyle FontStyle {
+                                    family "SERIF"
+                                    style "BOLD"
+                                    size 0.8
+                                }
+                            }
+                        }
+                    ]
+                }
+                Transform {
+                    translation 4.7 0 -0.45
+                    rotation 0 1 0 0.209439
+                    children [
+                        Shape {
+                            appearance USE DarkGrey
+                            geometry Text {
+                                string ["STORE"]
+                                fontStyle FontStyle {
+                                    family "SERIF"
+                                    style "BOLD"
+                                    size 0.8
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+Viewpoint {
+    fieldOfView 1
+    position 0 0 20
+    orientation 0 0 0 0
+}

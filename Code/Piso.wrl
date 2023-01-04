@@ -1,0 +1,96 @@
+#VRML V2.0 utf8
+DEF PISO Group {
+    children [
+        DEF piso Transform {
+            translation -80 0 0
+            children [
+                DEF Piso Shape {
+                    appearance DEF BrancoFloral Appearance {
+                        material Material {
+                                diffuseColor 1 0.980392157 0.941176471
+                        }
+                    }
+                    geometry Cylinder {
+                        radius 10
+                        height 0
+                    }
+                }
+                Transform {
+                    translation 25 0 35
+                    scale 1.5 1 1.5
+                    children [USE Piso]
+                }
+                Transform {
+                    translation 25 0 -35
+                    scale 1.5 1 1.5
+                    children [USE Piso]
+                }
+                Transform {
+                    translation 80 0 50
+                    scale 2 1 2
+                    children [USE Piso]
+                }
+                Transform {
+                    translation 80 0 0
+                    children [
+                        Shape {
+                            appearance USE BrancoFloral
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0    0  60,                                        -15   0  57,
+                                       -32.5 0  50, -50   0  48,
+                                       -60   0  45, -70   0  17,
+                                       -90   0  0,
+                                       -70   0 -17, -60   0 -45,
+                                       -50   0 -48, -32.5 0 -50,
+                                        0    0 -60
+                                    ]
+                                }
+                                coordIndex [
+                                    0 11 10 9 8 7 6 5 4 3 2 1 -1
+                                    1 2 3 4 5 6 7 8 8 10 11 0 -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        Transform {
+            translation -60 0 -40
+            scale 1.75 1 1.75
+            children [USE Piso]
+        }
+        Shape {
+            appearance USE BrancoFloral
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                         0    0 -64, -32.5 0 -52
+                        -73   0 -51,
+                        -75   0 -18, -90   0  0
+                    ]
+                }
+                coordIndex [
+                    0 1 2 3 4 -1
+                    4 3 2 1 0 -1
+                ]
+            }
+        }
+        Transform {
+            rotation 0 1 0 3.141593
+            children [USE piso]
+        }
+    ]
+}
+Transform {
+    translation 0 -0.1 0
+    children [USE PISO]
+}
+
+Viewpoint {
+    fieldOfView 1
+    position 0 130 0
+    orientation 1 0 0 -1.570796
+}

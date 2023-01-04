@@ -1,0 +1,263 @@
+#VRML V2.0 utf8
+
+Group {
+    children [
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.941176471 0.501960784 0.501960784
+                    transparency 0.1
+                }
+            }
+            geometry DEF GRADE IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        #Top                   vértices[0 - 19]
+                       -20.0   0.0  20.0,   -25.625 0.0  19.375,
+                       -28.2   0.0  18.2,   -29.375 0.0  15.625,
+                       -30.0   0.0  10.0,   -30.0   0.0 -10.0,
+                       -29.375 0.0 -15.625, -28.2   0.0 -18.2,
+                       -25.625 0.0 -19.375, -20.0   0.0 -20.0,
+
+                        20.0   0.0  20.0,   25.625 0.0  19.375,
+                        28.2   0.0  18.2,   29.375 0.0  15.625,
+                        30.0   0.0  10.0,   30.0   0.0 -10.0,
+                        29.375 0.0 -15.625, 28.2   0.0 -18.2,
+                        25.625 0.0 -19.375, 20.0   0.0 -20.0,
+
+                        #Base                       vértices[20 - 39]
+                       -20.0   -15.0  20.0,   -25.625 -15.0  19.375,
+                       -28.2   -15.0  18.2,   -29.375 -15.0  15.625,
+                       -30.0   -15.0  10.0,   -30.0   -15.0 -10.0,
+                       -29.375 -15.0 -15.625, -28.2   -15.0 -18.2,
+                       -25.625 -15.0 -19.375, -20.0   -15.0 -20.0,
+
+                        20.0   -15.0  20.0,   25.625 -15.0  19.375,
+                        28.2   -15.0  18.2,   29.375 -15.0  15.625,
+                        30.0   -15.0  10.0,   30.0   -15.0 -10.0,
+                        29.375 -15.0 -15.625, 28.2   -15.0 -18.2,
+                        25.625 -15.0 -19.375, 20.0   -15.0 -20.0
+                    ]
+                }
+                coordIndex [
+                    #Lados_Fora
+                    10 30 31 11 -1, 11 31 32 12 -1, 12 32 33 13 -1, 13 33 34 14 -1,
+                    14 34 35 15 -1, 15 35 36 16 -1, 16 36 37 17 -1, 17 37 38 18 -1,
+                    18 38 39 19 -1, 19 39 29 09 -1, 09 29 28 08 -1, 08 28 27 07 -1,
+                    07 27 26 06 -1, 06 26 25 05 -1, 05 25 24 04 -1, 04 24 23 03 -1,
+                    03 23 22 02 -1, 02 22 21 01 -1, 01 21 20 00 -1, 00 20 30 10 -1,
+                    #Lados_Dentro
+                    00 20 21 01 -1, 01 21 22 02 -1, 02 22 23 03 -1, 03 23 24 04 -1,
+                    04 24 25 05 -1, 05 25 26 06 -1, 06 26 27 07 -1, 07 27 28 08 -1,
+                    08 28 29 09 -1, 09 29 39 19 -1, 19 39 38 18 -1, 18 38 37 17 -1,
+                    17 37 36 16 -1, 16 36 35 15 -1, 15 35 34 14 -1, 14 34 33 13 -1,
+                    13 33 32 12 -1, 12 32 31 11 -1, 11 31 30 10 -1, 10 30 20 00 -1,
+                ]
+            }
+        }
+        Transform {
+            scale 1.0025 0.005 1.002
+            children [
+                DEF GRADE_WHITE Shape {
+                    appearance Appearance {
+                        material Material {
+                            diffuseColor 1 1 1
+                            transparency 0.5
+                        }
+                    }
+                    geometry USE GRADE
+                }
+                Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                ]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}
+                Transform {
+                    translation 0 -1000 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                ]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}
+                Transform {
+                    translation 0 -2000 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                    Transform {
+                    translation 0 -50 0
+                    children [USE GRADE_WHITE
+                ]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}
+            ]
+        }
+    ]
+}
+
+Viewpoint {
+    fieldOfView 1
+    position 0 28 30
+    #orientation 1 0 0 -1.570796
+    orientation 1 0 0 -1   
+}
