@@ -4,7 +4,8 @@
 # vídeos
 # https://youtu.be/bPuaYdcCKrI
 # https://youtu.be/kkpmVMOAqJA
-
+#Fachada ondulada
+#Armação em forma de duna de areia
 Group {
 	children [
 		#Corpo
@@ -433,6 +434,6 @@ Group {
 
 Viewpoint {
     fieldOfView 1
-    position 0 20 10
+    position 0 90 0
     orientation 1 0 0 -1.570796
 }

@@ -27,7 +27,7 @@ Group {
                             appearance Appearance {
                                 material Material {
                                     diffuseColor 1 1 0
-                                    transparency 0.4
+                                    transparency 0.7
                                 }
                             }
                             geometry USE Cylinder_Base
@@ -108,6 +108,6 @@ Group {
 
 Viewpoint {
     fieldOfView 1
-    position 0 0 20
+    position 0 0 5
     orientation 0 0 0 0
 }
