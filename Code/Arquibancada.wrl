@@ -7,7 +7,7 @@ DEF Arqui Group {
             appearance DEF Arquibancada Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada_L.png"
+                    "..\images\Arquibancada_L.png"
                 }
             }
             geometry IndexedFaceSet {
@@ -45,7 +45,7 @@ DEF Arqui Group {
             appearance Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada_D1.png"
+                    "..\images\Arquibancada_D1.png"
                 }
             }
             geometry IndexedFaceSet {
@@ -67,7 +67,7 @@ DEF Arqui Group {
             appearance Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada_s2.png"                    
+                    "..\images\Arquibancada_s2.png"                    
                 }
             }
             geometry IndexedFaceSet {
@@ -120,7 +120,7 @@ DEF Arqui Group {
             appearance Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada_D2.png"
+                    "..\images\Arquibancada_D2.png"
                 }
             }
             geometry IndexedFaceSet {
@@ -140,7 +140,7 @@ DEF Arqui Group {
             appearance Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada_s1.png"
+                    "..\images\Arquibancada_s1.png"
                 }
             }
             geometry IndexedFaceSet {
@@ -162,7 +162,7 @@ DEF Arqui Group {
             appearance Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Arquibancada.png"
+                    "..\images\Arquibancada.png"
                 }
             }
             geometry IndexedFaceSet {
@@ -182,7 +182,7 @@ DEF Arqui Group {
             appearance DEF Leon Appearance {
                 texture ImageTexture {
                     url
-                    "C:\Users\Ronilson\Desktop\Computação Gráfica\Ahmed_Bin_Ali_3D\images\Leon.png"
+                    "..\images\Leon.png"
                     }
             }
             geometry IndexedFaceSet {
