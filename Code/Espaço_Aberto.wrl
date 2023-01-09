@@ -104,19 +104,6 @@ DEF B Group {
         }
     ]
 }
-#Copiar cada quadrado
-DEF C Group {
-    children [
-        Transform {
-            translation 0 -1.5 -3.5
-            children [
-                Transform {
-                   #F
-                }
-            ]
-        }
-    ]
-}
 Transform {
     translation 0 0 -5
     rotation 0 1 0 3.141593
