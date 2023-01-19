@@ -27,7 +27,7 @@ Group {
                             appearance Appearance {
                                 material Material {
                                     diffuseColor 1 1 0
-                                    transparency 0.7
+                                    transparency 0.5
                                 }
                             }
                             geometry USE Cylinder_Base

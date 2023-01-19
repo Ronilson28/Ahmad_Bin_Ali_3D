@@ -4,7 +4,7 @@
 Group {
 	children [
 		DEF Campo Shape {
-			appearance DEF VerdeFloresta  Appearance {
+			appearance DEF VerdeFloresta Appearance {
 				material Material {
 					diffuseColor 0.1333333 0.5450988 0.1333333
 				}
@@ -313,6 +313,55 @@ DEF Trave Transform {
 				}
 			]
 		}
+		Group {
+			children [
+				Transform {
+					translation -1 1.2 -3.65
+					children [
+						Shape {
+							appearance DEF Rede Appearance {
+								texture ImageTexture {
+									url "..\images\Rede_da_Trave.png"
+								}
+							}
+							geometry Box {
+								size 2 0.15 7.3
+							}
+						}
+						Transform {
+							translation -1 -1.2 0
+							children [
+								Shape {
+									appearance USE Rede
+									geometry Box {
+										size 0.15 2.4 7.3
+									}
+								}
+								DEF Rede_Lateral Transform {
+									translation 1 0 3.65
+									children [
+										Shape {
+											appearance Appearance {
+												texture ImageTexture {
+													url "..\images\Rede_Lateral.png"
+												}
+											}
+											geometry Box {
+												size 2 2.4 0.15
+											}
+										}
+									]
+								}
+								Transform {
+									rotation 1 0 0 3.141593
+									children [USE Rede_Lateral ]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
 	]
 }
 Transform {
@@ -333,10 +382,10 @@ DEF Bandeiras Transform {
 			}
 		}
 		DEF Bandeira Shape {
-        	appearance DEF Red Appearance {
-                material Material {
-                    diffuseColor 1 0 0
-                }
+        	appearance Appearance {
+                texture ImageTexture {
+					url "..\images\Bandeira_de_Escanteio.png"
+				}
             }
             geometry IndexedFaceSet {
                 coord Coordinate {
@@ -383,7 +432,11 @@ DEF Bandeiras Transform {
             scale 1.01 0.27 1.01
             children [
                 Shape {
-                    appearance USE Red
+					appearance Appearance {
+						texture ImageTexture {
+							url "..\images\Barra_Bandeira_de_Escanteio.png"
+						}
+					}
                     geometry USE barra
                 }
             ]
@@ -405,8 +458,154 @@ Transform {
 	]
 }
 
+#Placas de Propagandas
+Group {
+	children [
+		DEF Placa_Vertical Transform {
+			translation -58 1 0
+			children [
+				Shape {
+					appearance USE White
+					geometry Box {
+						size 0.15 2 73.9
+					}
+				}
+				Transform {
+					children [
+						DEF Placa Shape {
+							appearance DEF Mascote Appearance {
+								texture MovieTexture {
+									url "..\images\Mascote.gif"
+									loop TRUE
+								}
+							}
+							geometry Box {
+								size 0.155 1.9 9
+							}
+						}
+						Transform {
+							translation 0 0 10
+							children [
+								USE Placa
+								Transform {
+									translation 0 0 10
+									children [
+										USE Placa
+										Transform {
+											translation 0 0 10
+											children [ USE Placa ]
+										}
+									]
+								}
+							]
+						}
+						Transform {
+							translation 0 0 -10
+							children [
+								USE Placa
+								Transform {
+									translation 0 0 -10
+									children [
+										USE Placa
+										Transform {
+											translation 0 0 -10
+											children [ USE Placa ]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			rotation 0 1 0 3.141593
+			children [ USE Placa_Vertical ]
+		}
+		Transform {
+			translation 0 1 -37
+			children [
+				Shape {
+					appearance USE White
+					geometry Box {
+						size 116.2 2 0.15
+					}
+				}
+				Transform {
+					translation -10 0 0
+					children [
+						DEF Placa2 Shape {
+							appearance USE Mascote
+							geometry Box {
+								size 9 1.9 0.155
+							}
+						}
+						Transform {
+							translation -10 0 0
+							children [
+								USE Placa2
+								Transform {
+									translation -10 0 0
+									children [
+										USE Placa2
+										Transform {
+											translation -10 0 0
+											children [
+												USE Placa2
+												Transform {
+													translation -10 0 0
+													children [ USE Placa2 ]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+						Transform {
+							translation 10 0 0
+							children [
+								USE Placa2
+								Transform {
+									translation 10 0 0
+									children [
+										USE Placa2
+										Transform {
+											translation 10 0 0
+											children [
+												USE Placa2
+												Transform {
+													translation 10 0 0
+													children [
+														USE Placa2
+														Transform {
+															translation 10 0 0
+															children [
+																USE Placa2
+																Transform {
+																	translation 10 0 0
+																	children [ USE Placa2 ]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
 Viewpoint {
 	fieldOfView 1
-	position -52.5 1 35
+	position -52.5 2 5
 	#orientation 1 0 0 -1.570796
 }
